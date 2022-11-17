@@ -5,27 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
-    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Home Page</title>
 </head>
 <body>
+    <div class="container">
+
     <section>
         <aside>
             <img src="https://laplateforme.io/wp-content/uploads/2021/07/logo_laplateforme_bleu3.png" alt="">
-            <h1>La Plateforme</h1>
-            <!-- <h3>Bienvenue <b>bahassan.soule-ahamada@laplateforme.io</b> </h3> -->
-            <!-- <h3>Authentification réussie</h3> -->
-            <!-- <button>Fermeture de la session</button> -->
         </aside>
         <article class="parti3">
             <article id="article">
                 <img src="../static/fond.jpg" alt="" srcset="">
                 <div>
-                    <a href="{{url_for('formulaire')}}">Outil de détection de chiffres manuscrits</a>
+                    <a href="{{url_for('formulaire')}}">Upload d'image</a><br/>
+                    <a href="{{url_for('dessin')}}">Dessin d'image</a>
                     <p> Vous voulez faire de la reconnaissance d'image </p>
                 </div>
             </article>
             
         </article>
     </section>
+    </div>
 </body>
 </html>
